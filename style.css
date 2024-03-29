@@ -27,11 +27,11 @@ body {
     font-weight: 400;
     font-size: 14px;
     background-color: #f5f5f5;
+    margin: 0;
     display: flex;
-    border: 3px dashed black;
-    border-radius: 10px;
-    width: 670px;
-    height: 440px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 
@@ -42,7 +42,19 @@ h1 {
 
 .zbozi {
     display: flex;
+    width: 670px;
+    height: 440px;
+    border-radius: 10px;
+    box-shadow: #959595 5px 5px 10px;
 }
+
+.vizual,
+.detaily {
+    flex: 1;
+    width: 50%;
+}
+ 
+/* left side visual  */
 
 .vizual {
     background: linear-gradient(#06d7c1, #50cc49);
@@ -62,14 +74,17 @@ h1 {
 
 .bota {
     position: relative;
-    left: -20px;
+    left: -80px;
 }
+
+/* price detail */
 
 .cenovka {
     align-self: flex-end;
     position: relative;
-    top: -80px;
+    top: -55px;
     margin-right: 30px;
+    text-align: right;
 }
 
 .cena {
@@ -80,17 +95,70 @@ h1 {
 .zaruka {
     font-size: 12px;
 }
+/* end of price detail, end of visual */
 
 .detaily {
     display: flex;
     flex-direction: column;
+    padding: 30px;
+    background-color: white;
+    border-radius: 0 10px 10px 0;
 } 
+
+.nazev {
+    text-transform: uppercase;
+    margin: 0;
+}
 
 .produkt {
     color: #959595;
 }
 
+/* shoe size */
+
 .parametr {
     border-top: solid #06d7c1 2px;
-    margin: 20px 30px;
+    padding-top: 30px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.velikosti  {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.velikosti li {
+    margin: 0;
+    padding: 4px;
+}
+
+.velikosti li:hover {
+    border: 1px solid #f15f42;
+    margin: 0;
+    padding: 3px;
+    border-radius: 50%;
+    color: #f15f42;
+}
+
+/* end of shoe size */
+
+.tlacitko {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-size: 
+}
+
+.akce {
+    padding: 15px 30px;
+    margin-top: auto;
+    background-color: #f15f42;
+    border-radius: 5px;
+    width: min-content;
+    white-space: nowrap;
 }
